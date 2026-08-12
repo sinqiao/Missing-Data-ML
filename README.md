@@ -164,9 +164,19 @@ Completed:
 - Performed exploratory data analysis.
 - Investigated dataset structure, distributions, correlations, and missing values.
 
-Next steps:
-- Implement baseline machine learning models.
-- Learn evaluation methodology.
-- Introduce artificial missingness into the dataset.
+## Week 2: Baseline Machine Learning Models
+
+Completed:
+- Prepared features (`X`) and target (`y`).
+- Created a stratified 80/20 train/test split.
+- Implemented Logistic Regression with feature scaling using a pipeline.
+- Implemented Random Forest classification.
+- Created an evaluation function using accuracy, F1-score, and ROC-AUC.
+- Saved baseline model results to `results/baseline_results.csv`.
 
 ## References
+Next steps:
+
+- Introduce artificial missingness into the dataset.
+- Implement MCAR, MAR, and MNAR missing-data mechanisms.
+- Begin experimenting with imputation methods.
