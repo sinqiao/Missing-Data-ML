@@ -174,9 +174,16 @@ Completed:
 - Created an evaluation function using accuracy, F1-score, and ROC-AUC.
 - Saved baseline model results to `results/baseline_results.csv`.
 
-## References
-Next steps:
+### Week 3: Missingness Simulation
 
-- Introduce artificial missingness into the dataset.
-- Implement MCAR, MAR, and MNAR missing-data mechanisms.
-- Begin experimenting with imputation methods.
+Completed:
+- Implemented controlled MCAR missingness.
+- Tested missingness levels of 10%, 20%, 30%, and 50%.
+- Evaluated the effect of missingness on Logistic Regression and Random Forest.
+- Established complete-case analysis as a baseline.
+
+Next:
+- Implement classical imputation methods.
+- Compare imputed datasets against complete-case analysis.
+
+## References
