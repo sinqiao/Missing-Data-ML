@@ -32,13 +32,13 @@ This project aims to answer:
 
 - How much does the choice of imputation method affect machine learning performance?
 - Which imputation methods perform best as the percentage of missing data increases?
-- How do Bayesian imputation methods compare with classical approaches in terms of predictive performance and uncertainty estimation?
+- How do Bayesian approaches compare with classical imputation methods in terms of predictive performance and uncertainty estimation?
 - Which methods are most robust under different levels of missingness?
 - Do some machine learning models handle imperfect imputations better than others?
 
 ## Experimental Design
 
-The project will evaluate how different missing-data handling approaches influence machine learning performance.
+The project evaluates how different missing-data handling approaches influence machine learning performance.
 
 The experimental workflow is:
 
@@ -50,7 +50,8 @@ The experimental workflow is:
    - 30% missing data
    - 50% missing data
 
-3. Apply different imputation strategies:
+3. Apply different missing-data handling strategies, progressing from simple statistical methods to more advanced approaches:
+   - Complete-case analysis
    - Mean/median imputation
    - KNN imputation
    - MICE
@@ -66,9 +67,9 @@ The experimental workflow is:
    - AUC
    - Measures of uncertainty where applicable
 
-6. Compare how different imputation methods perform as missingness increases.
+6. Compare how different approaches perform as missingness increases.
 
-The machine learning models, dataset, and evaluation metrics will remain fixed while the imputation method is varied. This allows the effect of missing-data handling strategies to be isolated and compared fairly.
+The dataset, machine learning models, and evaluation metrics will remain fixed while the missing-data handling method is varied. This provides a controlled framework for comparing different approaches.
 
 ## Dataset
 
@@ -82,12 +83,11 @@ scikit-learn
 
 ### Baseline Methods
 
-Simple statistical approaches:
+The initial baselines are:
 
+- Complete-case analysis
 - Mean imputation
 - Median imputation
-
-These methods provide a baseline and help understand their limitations and situations where they may still be appropriate.
 
 ### Classical Methods
 
@@ -100,15 +100,15 @@ These methods consider relationships between variables and attempt to better rep
 
 ### Bayesian Methods
 
-A Bayesian approach will be explored to understand how probabilistic models can represent uncertainty when estimating missing values.
+The project will explore Bayesian approaches to missing data to investigate how probabilistic modelling can represent uncertainty when estimating missing values.
 
 Possible approaches include:
 
-- Bayesian linear regression to develop understanding of Bayesian modelling.
-- Bayesian imputation methods.
-- Posterior sampling methods using probabilistic programming frameworks such as PyMC.
+- Bayesian linear regression as an introduction to Bayesian modelling.
+- Bayesian imputation models.
+- Posterior sampling using probabilistic programming frameworks such as PyMC.
 
-The exact Bayesian approach will be refined based on understanding gained during the project.
+The final Bayesian approach will be selected based on the theoretical understanding and practical experience developed during the project.
 
 ## Machine Learning Models
 
@@ -128,15 +128,19 @@ Evaluation metrics will include:
 
 ## Tools and Libraries
 
-Python libraries used:
+Currently used:
 
+- Python
 - NumPy
 - Pandas
 - Scikit-learn
 - Matplotlib
 - Missingno
+
+Planned:
+
 - ArviZ
-- PyMC (optional)
+- PyMC
 
 ## Results
 
@@ -179,11 +183,21 @@ Completed:
 Completed:
 - Implemented controlled MCAR missingness.
 - Tested missingness levels of 10%, 20%, 30%, and 50%.
+- Verified the resulting missingness levels.
 - Evaluated the effect of missingness on Logistic Regression and Random Forest.
 - Established complete-case analysis as a baseline.
 
+### Week 4: Classical Imputation
+
+Completed:
+- Implemented mean and median imputation.
+- Implemented KNN imputation.
+- Considered data leakage during preprocessing.
+- Compared imputation methods under different levels of MCAR missingness.
+- Evaluated Logistic Regression and Random Forest performance.
+
 Next:
-- Implement classical imputation methods.
-- Compare imputed datasets against complete-case analysis.
+- Investigate more advanced imputation approaches, including MICE.
+- Begin exploring Bayesian approaches to missing data.
 
 ## References
