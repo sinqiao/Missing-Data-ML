@@ -160,7 +160,7 @@ Missing-Data-ML/
 
 ## Current Progress
 
-## Week 1: Setup and Exploratory Data Analysis
+### Week 1: Setup and Exploratory Data Analysis
 
 Completed:
 - Created project structure and development environment.
@@ -168,7 +168,7 @@ Completed:
 - Performed exploratory data analysis.
 - Investigated dataset structure, distributions, correlations, and missing values.
 
-## Week 2: Baseline Machine Learning Models
+### Week 2: Baseline Machine Learning Models
 
 Completed:
 - Prepared features (`X`) and target (`y`).
