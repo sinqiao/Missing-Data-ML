@@ -196,8 +196,18 @@ Completed:
 - Compared imputation methods under different levels of MCAR missingness.
 - Evaluated Logistic Regression and Random Forest performance.
 
+### Week 5: Validation of Classical Imputation
+
+Completed:
+- Investigated the effect of feature scaling on KNN neighbour selection.
+- Reviewed the KNN preprocessing pipeline for potential methodological issues.
+- Evaluated alternative preprocessing strategies.
+- Re-ran the KNN experiments using the validated approach.
+- Re-evaluated classical imputation methods under MCAR missingness.
+
+
 Next:
-- Investigate more advanced imputation approaches, including MICE.
-- Begin exploring Bayesian approaches to missing data.
+- Investigate MICE and probabilistic approaches to missing data.
+- Begin developing the theoretical foundations for Bayesian imputation.
 
 ## References
